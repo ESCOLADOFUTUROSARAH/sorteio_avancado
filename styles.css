@@ -39,10 +39,11 @@ button {
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #4caf50;
+    background-color: #45a049;
 }
 
 #resultado {
@@ -53,4 +54,39 @@ button:hover {
 
 .sorteio {
     margin-bottom: 15px;
+    animation: fadein 1s;
+}
+
+.sorteio span {
+    background-color: #e0f7fa;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.barraProgresso {
+    width: 100%;
+    background-color: #f3f3f3;
+    margin-top: 20px;
+    height: 20px;
+}
+
+.progressoBarra {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
 }
